@@ -45,13 +45,13 @@ function highestCount(numbers) {
   for (let elements of numbers) {
     if (bigNumber <= elements) {
       bigNumber = elements;
-  } 
+    }
   } for (let valors of numbers) {
     if (bigNumber === valors) {
       repeticoes.push(valors);
     }
   }
-return repeticoes.length;
+  return repeticoes.length;
 }
 
 // Desafio 7
@@ -128,8 +128,18 @@ function decode(string) {
 }
 
 // Desafio 10
-function techList() {
+function techList(technologies, name) {
   // seu código aqui
+  let sorts = technologies.sort();
+  let infos = [];
+  for (let techs of sorts) {
+   infos.push({tech: techs, name: name});
+  }
+  if (infos.length === 0) {
+    return 'Vazio!';
+  } else {
+  return infos;
+  } 
 }
 
 module.exports = {
