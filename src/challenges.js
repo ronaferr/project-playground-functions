@@ -45,13 +45,13 @@ function highestCount(numbers) {
   for (let elements of numbers) {
     if (bigNumber <= elements) {
       bigNumber = elements;
-    } 
-  }for (let valors of numbers) {
+  } 
+  } for (let valors of numbers) {
     if (bigNumber === valors) {
       repeticoes.push(valors);
     }
   }
-    return repeticoes.length;
+return repeticoes.length;
 }
 
 // Desafio 7
@@ -89,11 +89,42 @@ function fizzBuzz(numbers) {
 }
 
 // Desafio 9
-function encode() {
+function encode(string) {
   // seu código aqui
+  let splits = string.split('');
+  for (let i = 0; i < splits.length; i += 1) {
+    if (splits[i] === 'a') {
+      splits[i] = 1;
+    } else if (splits[i] === 'e') {
+      splits[i] = 2;
+    } else if (splits[i] === 'i') {
+      splits[i] = 3;
+    } else if (splits[i] === 'o') {
+      splits[i] = 4;
+    } else if (splits[i] === 'u') {
+      splits[i] = 5;
+    }
+  }
+  return splits.join('');
 }
-function decode() {
+
+function decode(string) {
   // seu código aqui
+  let splits = string.split('');
+  for (let i = 0; i < splits.length; i += 1) {
+    if (splits[i] === '1') {
+      splits[i] = 'a';
+    } else if (splits[i] === '2') {
+      splits[i] = 'e';
+    } else if (splits[i] === '3') {
+      splits[i] = 'i';
+    } else if (splits[i] === '4') {
+      splits[i] = 'o';
+    } else if (splits[i] === '5') {
+      splits[i] = 'u';
+    }
+  }
+  return splits.join('');
 }
 
 // Desafio 10
