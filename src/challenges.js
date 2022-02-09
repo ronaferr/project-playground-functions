@@ -22,13 +22,11 @@ function splitSentence(string) {
   return split;
 }
 
-
 // Desafio 4
 function concatName(palavras) {
   // seu código aqui
-  return `${palavras[palavras.length-1]}, ${palavras[0]}`;
+  return `${palavras[palavras.length - 1]}, ${palavras[0]}`;
 }
-
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -39,15 +37,30 @@ function footballPoints(wins, ties) {
   return totalPoints;
 }
 
-
 // Desafio 6
 function highestCount() {
   // seu código aqui
 }
 
+
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  //difenca gato1
+  let distanciaCat1 = mouse - cat2;
+  //difernca gato2
+  let distanciaCat2 = mouse - cat1;
+  //comparar gato1 e gato2
+  if (distanciaCat2 + distanciaCat1 == 0) {
+    return "os gatos trombam e o rato foge";
+  } else if (distanciaCat1 < distanciaCat2) {
+    return "cat1";
+   } else if (distanciaCat2 < distanciaCat1) {
+      return "cat2";
+  } else {
+    return "os gatos trombam e o rato foge";
+  }
+  //retornar resultado
 }
 
 // Desafio 8
