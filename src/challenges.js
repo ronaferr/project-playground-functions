@@ -105,7 +105,7 @@ function encode(string) {
       splits[i] = 5;
     }
   }
-  return splits.join('');
+     return splits.join('');
 }
 
 function decode(string) {
@@ -124,7 +124,7 @@ function decode(string) {
       splits[i] = 'u';
     }
   }
-  return splits.join('');
+    return splits.join('');
 }
 
 // Desafio 10
@@ -133,13 +133,13 @@ function techList(technologies, name) {
   let sorts = technologies.sort();
   let infos = [];
   for (let techs of sorts) {
-   infos.push({tech: techs, name: name});
+    infos.push({ tech: techs, name: name });
   }
   if (infos.length === 0) {
     return 'Vazio!';
   } else {
-  return infos;
-  } 
+    return infos;
+  }
 }
 
 module.exports = {
