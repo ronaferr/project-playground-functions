@@ -43,8 +43,20 @@ function triangleCheck(lineaA, lineaB, lineaC) {
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(bebida) {
   // seu código aqui
+  let n = bebida.match(/\d+/g);
+  let frase;
+  let somaBebida = 0;
+  for (let i = 0; i < n.length; i += 1) {
+    let numeroReal =  parseInt(n[i]);
+    somaBebida += numeroReal;
+  }
+  if (somaBebida === 1) {
+    frase = `${somaBebida} copo de água`;
+  } else {frase = `${somaBebida} copos de água`;
+  }
+  return frase;
 }
 
 module.exports = {
